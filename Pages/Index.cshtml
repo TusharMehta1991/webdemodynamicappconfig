@@ -4,13 +4,8 @@
     ViewData["Title"] = "Home page";
 }
 
-@section InlineStyles {
-    body {
-        background-color: @Model.Settings.BgColor
-    }
-}
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>@Model.Settings.HeaderContent</a>.</p>
+    <p style="background-color: @Model.Settings.BgColor">@Model.Settings.HeaderContent</a>.</p>
 </div>
